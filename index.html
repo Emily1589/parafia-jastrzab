@@ -419,6 +419,191 @@
   .blog-entry-image{min-height:190px}
 }
 
+
+/* Główny układ z prawym panelem */
+.page-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 315px;
+  gap:30px;
+  align-items:start;
+  padding-top:52px;
+  padding-bottom:72px;
+}
+.page-main{min-width:0}
+.page-main > .content-section{
+  padding:42px 0;
+}
+.page-main > .content-section:first-child{padding-top:0}
+.page-main > .content-section.soft{
+  background:transparent;
+}
+.page-main .container{
+  width:100%;
+  max-width:none;
+}
+.page-main .content-box,
+.page-main .intentions-table-shell,
+.page-main .map-preview{
+  box-shadow:0 10px 30px rgba(23,53,40,.07);
+}
+.page-main .news-toolbar{
+  align-items:flex-start;
+}
+.page-main .section-heading{
+  max-width:620px;
+}
+.page-main .section-heading p,
+.page-main .cards-intro p{
+  max-width:610px;
+}
+.page-main .news-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.page-main .info-card-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.page-main .link-card{
+  min-height:210px;
+}
+.page-main .map-actions{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+/* Boczny panel */
+.right-sidebar{min-width:0}
+.sidebar-sticky{
+  position:sticky;
+  top:96px;
+  display:grid;
+  gap:15px;
+}
+.sidebar-title{
+  padding:20px 21px;
+  border-radius:15px;
+  color:#fff;
+  background:linear-gradient(135deg,var(--green-950),var(--green-700));
+  box-shadow:0 14px 35px rgba(23,53,40,.18);
+}
+.sidebar-title span{
+  display:block;
+  color:var(--gold-light);
+  font-size:12px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.sidebar-title h2{
+  margin:3px 0 0;
+  color:#fff;
+  font-size:29px;
+}
+.side-widget{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:18px;
+  box-shadow:0 10px 28px rgba(23,53,40,.08);
+}
+.side-widget-heading{
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+}
+.side-widget-icon{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--green-100);
+  color:var(--green-900);
+  font-size:20px;
+}
+.side-widget h3{
+  margin:1px 0 4px;
+  font-size:20px;
+  line-height:1.15;
+}
+.side-widget p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.45;
+}
+.side-widget .today-date{
+  margin:3px 0 0;
+  font-size:14px;
+}
+.side-widget .today-weekday{
+  margin:1px 0 0;
+  font-size:12px;
+}
+.side-widget-button{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:42px;
+  margin-top:14px;
+  padding:9px 13px;
+  border-radius:8px;
+  background:var(--green-800);
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+}
+.side-widget-button:hover{background:var(--green-950)}
+.liturgy-side-widget{
+  padding-bottom:12px;
+}
+.liturgy-side-widget iframe{
+  width:100%;
+  height:245px;
+  display:block;
+  margin-top:13px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:#fff;
+}
+.vatican-side-widget{
+  background:linear-gradient(145deg,#fff,#f8f5eb);
+}
+
+@media(max-width:1050px){
+  .page-layout{
+    grid-template-columns:minmax(0,1fr) 280px;
+    gap:22px;
+  }
+}
+@media(max-width:880px){
+  .page-layout{
+    grid-template-columns:1fr;
+    padding-top:38px;
+  }
+  .right-sidebar{
+    grid-row:1;
+  }
+  .sidebar-sticky{
+    position:static;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  .sidebar-title{
+    grid-column:1/-1;
+  }
+  .liturgy-side-widget iframe{height:230px}
+}
+@media(max-width:700px){
+  .sidebar-sticky{grid-template-columns:1fr}
+  .page-main .news-grid,
+  .page-main .info-card-grid{
+    grid-template-columns:1fr;
+  }
+  .page-main > .content-section{padding:34px 0}
+}
+
 </style>
 </head>
 <body>
@@ -474,6 +659,9 @@
   <a class="quick-card" href="#intencje"><span class="quick-icon">🗓</span><div><h2>Intencje</h2><p>Porządek intencji mszalnych.</p></div><span class="card-btn">Zobacz</span></a>
   <a class="quick-card" href="#wydarzenia"><span class="quick-icon">👥</span><div><h2>Wydarzenia</h2><p>Rekolekcje, odpusty i spotkania.</p></div><span class="card-btn">Zobacz</span></a>
 </div></section>
+<div class="page-layout container">
+  <div class="page-main">
+
 
 
 <section class="content-section soft" id="aktualnosci">
@@ -608,57 +796,6 @@
 
 
 <section class="content-section dark" id="cmentarz"><div class="container"><div class="content-box dark-box editable-content" data-md="content/cmentarz.md"><p class="loading-note">Wczytywanie informacji…</p></div></div></section>
-
-<section class="content-section daily-widgets" id="slowo-na-dzis">
-  <div class="container cards-shell">
-    <div class="cards-intro">
-      <h2>Słowo i Kościół na dziś</h2>
-      <p>Codzienne czytania oraz wiadomości aktualizowane automatycznie przez serwisy katolickie.</p>
-    </div>
-
-    <div class="widget-grid">
-      <article class="daily-widget">
-        <div class="daily-widget-head">
-          <div class="daily-widget-icon">☀</div>
-          <h3>Ewangelia na dziś</h3>
-          <p>Przejdź do pełnych czytań mszalnych i dzisiejszej Ewangelii.</p>
-        </div>
-        <div class="daily-widget-body">
-          <div class="today-date" id="todayDate">Dzisiejsza data</div>
-          <div class="today-weekday" id="todayWeekday"></div>
-          <a class="widget-button" id="todayGospelLink" href="https://opoka.org.pl/liturgia" target="_blank" rel="noopener">
-            Czytaj Ewangelię →
-          </a>
-        </div>
-      </article>
-
-      <article class="daily-widget opoka-widget">
-        <iframe
-          title="Liturgia dnia – Opoka"
-          src="https://opoka.org.pl/liturgia_iframe"
-          scrolling="no"
-          loading="lazy">
-        </iframe>
-      </article>
-
-      <article class="daily-widget">
-        <div class="daily-widget-head">
-          <div class="daily-widget-icon">✦</div>
-          <h3>Vatican News</h3>
-          <p>Najnowsze informacje o Papieżu, Stolicy Apostolskiej i życiu Kościoła.</p>
-        </div>
-        <div class="vatican-preview">
-          <div class="vatican-mark">Wiadomości ze źródła Kościoła powszechnego</div>
-          <a class="widget-button" href="https://www.vaticannews.va/pl.html" target="_blank" rel="noopener">
-            Zobacz najnowsze wiadomości →
-          </a>
-          <p class="widget-note">Odnośnik prowadzi do polskiej wersji oficjalnego serwisu Vatican News.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="content-section soft" id="kontakt"><div class="container"><div class="content-box editable-content" data-md="content/kontakt.md"><p class="loading-note">Wczytywanie danych kontaktowych…</p></div>
 
 
@@ -681,6 +818,66 @@
 </div>
 
 </div></section>
+
+  </div>
+  
+<aside class="right-sidebar" aria-label="Słowo i Kościół na dziś">
+  <div class="sidebar-sticky">
+    <div class="sidebar-title">
+      <span>Słowo i Kościół</span>
+      <h2>Na dziś</h2>
+    </div>
+
+    <article class="side-widget gospel-side-widget">
+      <div class="side-widget-heading">
+        <span class="side-widget-icon">☀</span>
+        <div>
+          <h3>Ewangelia na dziś</h3>
+          <div class="today-date" id="todayDate">Dzisiejsza data</div>
+          <div class="today-weekday" id="todayWeekday"></div>
+        </div>
+      </div>
+      <a class="side-widget-button" id="todayGospelLink"
+         href="https://opoka.org.pl/liturgia"
+         target="_blank" rel="noopener">
+        Czytaj Ewangelię →
+      </a>
+    </article>
+
+    <article class="side-widget liturgy-side-widget">
+      <div class="side-widget-heading">
+        <span class="side-widget-icon">✝</span>
+        <div>
+          <h3>Liturgia dnia</h3>
+          <p>Automatycznie z serwisu Opoka</p>
+        </div>
+      </div>
+      <iframe
+        title="Liturgia dnia – Opoka"
+        src="https://opoka.org.pl/liturgia_iframe"
+        loading="lazy"
+        scrolling="yes">
+      </iframe>
+    </article>
+
+    <article class="side-widget vatican-side-widget">
+      <div class="side-widget-heading">
+        <span class="side-widget-icon">✦</span>
+        <div>
+          <h3>Vatican News</h3>
+          <p>Najnowsze wiadomości z życia Kościoła.</p>
+        </div>
+      </div>
+      <a class="side-widget-button"
+         href="https://www.vaticannews.va/pl.html"
+         target="_blank" rel="noopener">
+        Zobacz wiadomości →
+      </a>
+    </article>
+  </div>
+</aside>
+
+</div>
 </main>
 
 <footer><div class="container footer-inner"><div class="footer-brand">Parafia św. Jana Chrzciciela w Jastrzębiu</div><a class="back-top" href="#start">Wróć na górę ↑</a></div></footer>

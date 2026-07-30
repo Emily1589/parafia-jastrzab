@@ -105,3 +105,13 @@ WIDŻETY CODZIENNE
 - Data i link do Ewangelii zmieniają się automatycznie każdego dnia.
 - Widżet liturgii dnia jest pobierany z serwisu Opoka.
 - Kafelek Vatican News prowadzi do aktualnej polskiej wersji oficjalnego serwisu.
+
+
+BOCZNY PANEL
+
+Widżety „Ewangelia na dziś”, „Liturgia dnia” oraz „Vatican News” znajdują się
+teraz w prawym, przyklejonym panelu. Na komputerze panel pozostaje widoczny
+podczas przewijania strony. Główna treść po lewej stronie została zwężona,
+aby zachować proporcje i czytelność strony.
+
+Na telefonach i mniejszych tabletach panel przenosi się nad główną treść.
