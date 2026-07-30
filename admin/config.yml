@@ -1,0 +1,59 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: pl
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "ustawienia"
+    label: "Treść strony"
+    files:
+      - name: "strona"
+        label: "Strona parafii"
+        file: "content/settings.json"
+        format: "json"
+        fields:
+          - { label: "Nazwa parafii", name: "parish_name", widget: "string" }
+          - { label: "Nagłówek na zdjęciu", name: "hero_title", widget: "string" }
+          - { label: "Cytat", name: "hero_quote", widget: "string" }
+          - { label: "Msze w niedziele", name: "sunday_masses", widget: "string" }
+          - { label: "Msze w dni powszednie", name: "weekday_masses", widget: "string" }
+          - { label: "Dodatkowa informacja o Mszach", name: "weekday_note", widget: "string" }
+          - { label: "Adres", name: "address", widget: "string" }
+          - { label: "Telefon wyświetlany", name: "phone", widget: "string" }
+          - { label: "Telefon do linku, np. +48486284006", name: "phone_link", widget: "string" }
+          - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Proboszcz", name: "pastor", widget: "string" }
+          - { label: "Godziny kancelarii", name: "office_hours", widget: "text" }
+
+          - label: "Ogłoszenia"
+            name: "announcements"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Data lub opis terminu", name: "date", widget: "string" }
+              - { label: "Krótki opis na kafelku", name: "summary", widget: "text" }
+              - { label: "Pełna treść", name: "body", widget: "text" }
+
+          - label: "Intencje mszalne"
+            name: "intentions"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Tydzień lub data", name: "date", widget: "string" }
+              - { label: "Krótki opis na kafelku", name: "summary", widget: "text" }
+              - { label: "Pełna treść", name: "body", widget: "text" }
+
+          - label: "Wydarzenia"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Data wydarzenia", name: "date", widget: "string" }
+              - { label: "Krótki opis na kafelku", name: "summary", widget: "text" }
+              - { label: "Pełna treść", name: "body", widget: "text" }
