@@ -289,6 +289,136 @@
   .map-preview iframe{height:300px}
 }
 
+
+/* Aktualności parafialne */
+.news-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+.news-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(23,53,40,.08);
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.news-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 38px rgba(23,53,40,.13);
+  border-color:rgba(198,146,41,.55);
+}
+.news-card-image{
+  height:190px;
+  background:linear-gradient(135deg,var(--green-900),var(--green-600));
+  overflow:hidden;
+}
+.news-card-image img{width:100%;height:100%;object-fit:cover;display:block}
+.news-card-placeholder{
+  height:100%;display:grid;place-items:center;color:#fff;
+  font-size:44px;background:
+  radial-gradient(circle at 80% 20%,rgba(255,255,255,.15),transparent 24%),
+  linear-gradient(135deg,var(--green-950),var(--green-700));
+}
+.news-card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.news-date{
+  font-size:13px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--gold-dark);font-weight:700;margin-bottom:9px;
+}
+.news-card h3{font-size:24px;line-height:1.2;margin:0 0 11px;color:var(--green-950)}
+.news-card p{margin:0 0 20px;color:var(--muted);line-height:1.6}
+.news-read{margin-top:auto;color:var(--green-800);font-weight:700;text-decoration:none}
+.news-read::after{content:" →"}
+.news-toolbar{
+  display:flex;align-items:end;justify-content:space-between;
+  gap:24px;margin-bottom:30px;
+}
+.news-toolbar .section-heading{margin-bottom:0}
+.news-empty{grid-column:1/-1;text-align:center;padding:35px;background:#fff;border-radius:14px}
+
+/* Widżety codzienne */
+.daily-widgets{
+  background:linear-gradient(135deg,var(--green-950),#254f3a);
+  color:#fff;
+}
+.daily-widgets .cards-intro h2{color:#fff}
+.daily-widgets .cards-intro p{color:rgba(255,255,255,.75)}
+.widget-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;align-items:stretch;
+}
+.daily-widget{
+  background:#fff;color:var(--green-950);
+  border-radius:16px;overflow:hidden;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 16px 40px rgba(0,0,0,.16);
+  min-height:340px;display:flex;flex-direction:column;
+}
+.daily-widget-head{padding:22px 22px 15px}
+.daily-widget-icon{
+  width:48px;height:48px;border-radius:50%;display:grid;place-items:center;
+  background:var(--green-100);font-size:23px;margin-bottom:15px;
+}
+.daily-widget h3{font-size:25px;margin:0 0 7px}
+.daily-widget p{color:var(--muted);line-height:1.55;margin:0}
+.daily-widget-body{padding:0 22px 22px;display:flex;flex-direction:column;flex:1}
+.today-date{font-size:18px;font-weight:700;margin:8px 0 4px}
+.today-weekday{color:var(--gold-dark);font-weight:700;text-transform:capitalize;margin-bottom:22px}
+.widget-button{
+  display:inline-flex;justify-content:center;align-items:center;
+  min-height:46px;padding:11px 17px;border-radius:9px;
+  margin-top:auto;background:var(--green-800);color:#fff;
+  text-decoration:none;font-weight:700;text-align:center;
+}
+.widget-button:hover{background:var(--green-950)}
+.opoka-widget{height:460px;min-height:460px}
+.opoka-widget iframe{width:100%;height:460px;border:0;display:block}
+.vatican-preview{
+  flex:1;display:flex;flex-direction:column;justify-content:space-between;
+  padding:0 22px 22px;
+}
+.vatican-mark{
+  min-height:150px;border-radius:12px;padding:22px;
+  display:flex;align-items:end;
+  color:#fff;background:
+  linear-gradient(rgba(23,53,40,.45),rgba(23,53,40,.8)),
+  linear-gradient(135deg,#835f25,#173528);
+  font-family:Georgia,"Times New Roman",serif;font-size:25px;
+  margin-bottom:18px;
+}
+.widget-note{font-size:13px;color:var(--muted);margin-top:12px!important}
+
+/* Blog */
+.blog-list{display:grid;gap:24px}
+.blog-entry{
+  display:grid;grid-template-columns:280px 1fr;
+  background:#fff;border:1px solid var(--border);border-radius:16px;
+  overflow:hidden;box-shadow:var(--shadow);
+}
+.blog-entry-image{min-height:220px;background:linear-gradient(135deg,var(--green-950),var(--green-700))}
+.blog-entry-image img{width:100%;height:100%;object-fit:cover}
+.blog-entry-body{padding:28px}
+.blog-entry h2{margin:6px 0 12px;font-size:29px}
+.article-body h2{margin-top:30px}
+.article-body img{max-width:100%;border-radius:12px}
+.article-lead{font-size:19px;color:var(--muted);line-height:1.7}
+@media(max-width:900px){
+  .news-grid,.widget-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .daily-widget:last-child{grid-column:1/-1}
+}
+@media(max-width:700px){
+  .news-grid,.widget-grid{grid-template-columns:1fr}
+  .daily-widget:last-child{grid-column:auto}
+  .news-toolbar{align-items:flex-start;flex-direction:column}
+  .blog-entry{grid-template-columns:1fr}
+  .blog-entry-image{min-height:190px}
+}
+
 </style>
 </head>
 <body>
@@ -299,6 +429,7 @@
       <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">☰</button>
       
 <div class="nav-links" id="navLinks">
+  <a href="aktualnosci.html">Aktualności</a>
   <a href="#ogloszenia">Ogłoszenia</a>
   <a href="#intencje">Intencje</a>
   <a href="#msze">Msze</a>
@@ -343,6 +474,23 @@
   <a class="quick-card" href="#intencje"><span class="quick-icon">🗓</span><div><h2>Intencje</h2><p>Porządek intencji mszalnych.</p></div><span class="card-btn">Zobacz</span></a>
   <a class="quick-card" href="#wydarzenia"><span class="quick-icon">👥</span><div><h2>Wydarzenia</h2><p>Rekolekcje, odpusty i spotkania.</p></div><span class="card-btn">Zobacz</span></a>
 </div></section>
+
+
+<section class="content-section soft" id="aktualnosci">
+  <div class="container">
+    <div class="news-toolbar">
+      <div class="section-heading">
+        <span class="eyebrow">Z życia parafii</span>
+        <h2>Aktualności</h2>
+        <p>Najnowsze wydarzenia, zaproszenia i relacje z życia naszej wspólnoty.</p>
+      </div>
+      <a class="btn btn-outline" href="aktualnosci.html">Wszystkie aktualności →</a>
+    </div>
+    <div class="news-grid" id="homeNews">
+      <p class="news-empty">Wczytywanie aktualności…</p>
+    </div>
+  </div>
+</section>
 
 <section class="content-section" id="ogloszenia"><div class="container"><div class="content-box editable-content" data-md="content/ogloszenia.md"><p class="loading-note">Wczytywanie ogłoszeń…</p></div></div></section>
 
@@ -460,6 +608,57 @@
 
 
 <section class="content-section dark" id="cmentarz"><div class="container"><div class="content-box dark-box editable-content" data-md="content/cmentarz.md"><p class="loading-note">Wczytywanie informacji…</p></div></div></section>
+
+<section class="content-section daily-widgets" id="slowo-na-dzis">
+  <div class="container cards-shell">
+    <div class="cards-intro">
+      <h2>Słowo i Kościół na dziś</h2>
+      <p>Codzienne czytania oraz wiadomości aktualizowane automatycznie przez serwisy katolickie.</p>
+    </div>
+
+    <div class="widget-grid">
+      <article class="daily-widget">
+        <div class="daily-widget-head">
+          <div class="daily-widget-icon">☀</div>
+          <h3>Ewangelia na dziś</h3>
+          <p>Przejdź do pełnych czytań mszalnych i dzisiejszej Ewangelii.</p>
+        </div>
+        <div class="daily-widget-body">
+          <div class="today-date" id="todayDate">Dzisiejsza data</div>
+          <div class="today-weekday" id="todayWeekday"></div>
+          <a class="widget-button" id="todayGospelLink" href="https://opoka.org.pl/liturgia" target="_blank" rel="noopener">
+            Czytaj Ewangelię →
+          </a>
+        </div>
+      </article>
+
+      <article class="daily-widget opoka-widget">
+        <iframe
+          title="Liturgia dnia – Opoka"
+          src="https://opoka.org.pl/liturgia_iframe"
+          scrolling="no"
+          loading="lazy">
+        </iframe>
+      </article>
+
+      <article class="daily-widget">
+        <div class="daily-widget-head">
+          <div class="daily-widget-icon">✦</div>
+          <h3>Vatican News</h3>
+          <p>Najnowsze informacje o Papieżu, Stolicy Apostolskiej i życiu Kościoła.</p>
+        </div>
+        <div class="vatican-preview">
+          <div class="vatican-mark">Wiadomości ze źródła Kościoła powszechnego</div>
+          <a class="widget-button" href="https://www.vaticannews.va/pl.html" target="_blank" rel="noopener">
+            Zobacz najnowsze wiadomości →
+          </a>
+          <p class="widget-note">Odnośnik prowadzi do polskiej wersji oficjalnego serwisu Vatican News.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="content-section soft" id="kontakt"><div class="container"><div class="content-box editable-content" data-md="content/kontakt.md"><p class="loading-note">Wczytywanie danych kontaktowych…</p></div>
 
 
@@ -617,6 +816,69 @@ async function loadIntentions(){
   }
 }
 loadIntentions();
+
+
+function parseCSV(text){
+  const rows=[]; let row=[],field="",quoted=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i],n=text[i+1];
+    if(c=='"'){
+      if(quoted && n=='"'){field+='"';i++}
+      else quoted=!quoted;
+    }else if(c==';' && !quoted){row.push(field);field=""}
+    else if((c=='\n'||c=='\r') && !quoted){
+      if(c=='\r'&&n=='\n')i++;
+      row.push(field);field="";
+      if(row.some(v=>v.trim()!==""))rows.push(row);
+      row=[];
+    }else field+=c;
+  }
+  if(field||row.length){row.push(field);rows.push(row)}
+  if(!rows.length)return[];
+  const head=rows.shift().map(x=>x.trim());
+  return rows.map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()])));
+}
+function formatNewsDate(value){
+  const d=new Date(value+"T12:00:00");
+  return isNaN(d) ? value : new Intl.DateTimeFormat("pl-PL",{day:"numeric",month:"long",year:"numeric"}).format(d);
+}
+async function loadHomeNews(){
+  const target=document.getElementById("homeNews");
+  if(!target)return;
+  try{
+    const r=await fetch("content/aktualnosci.csv?v="+Date.now());
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    const posts=parseCSV(await r.text())
+      .filter(p=>p.slug&&p.tytul)
+      .sort((a,b)=>String(b.data).localeCompare(String(a.data)))
+      .slice(0,3);
+    if(!posts.length){target.innerHTML='<p class="news-empty">Pierwsze aktualności pojawią się tutaj wkrótce.</p>';return}
+    target.innerHTML=posts.map(p=>`
+      <article class="news-card">
+        <div class="news-card-image">${p.obraz?`<img src="${esc(p.obraz)}" alt="">`:`<div class="news-card-placeholder">✦</div>`}</div>
+        <div class="news-card-body">
+          <div class="news-date">${esc(formatNewsDate(p.data))}</div>
+          <h3>${esc(p.tytul)}</h3>
+          <p>${esc(p.skrot||"")}</p>
+          <a class="news-read" href="aktualnosc.html?id=${encodeURIComponent(p.slug)}">Czytaj więcej</a>
+        </div>
+      </article>`).join("");
+  }catch(e){
+    target.innerHTML='<p class="news-empty">Nie udało się wczytać aktualności.</p>';
+  }
+}
+function setTodayWidgets(){
+  const d=new Date();
+  const dateEl=document.getElementById("todayDate");
+  const weekdayEl=document.getElementById("todayWeekday");
+  if(dateEl)dateEl.textContent=new Intl.DateTimeFormat("pl-PL",{day:"numeric",month:"long",year:"numeric"}).format(d);
+  if(weekdayEl)weekdayEl.textContent=new Intl.DateTimeFormat("pl-PL",{weekday:"long"}).format(d);
+  const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");
+  const link=document.getElementById("todayGospelLink");
+  if(link)link.href=`https://opoka.org.pl/liturgia/${y}-${m}-${day}`;
+}
+loadHomeNews();
+setTodayWidgets();
 
 </script>
 </body>

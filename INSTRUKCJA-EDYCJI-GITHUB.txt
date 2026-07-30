@@ -75,3 +75,33 @@ NOWY UKŁAD STRONY
 - Na telefonie listę rozwija się przez kliknięcie nazwy „Parafia” lub „Sakramenty”.
 - Treść każdej podstrony nadal edytuje się w odpowiednim pliku w folderze content.
 - Sekcja lokalizacji zawiera podgląd Google Maps oraz przycisk „Otwórz w Google Maps”.
+
+
+AKTUALNOŚCI – BLOG PARAFII
+
+Aktualności edytuje się w jednym pliku:
+content/aktualnosci.csv
+
+Każdy wpis to jeden wiersz z kolumnami:
+slug;data;tytul;skrot;tresc;obraz
+
+Znaczenie pól:
+- slug – krótka unikalna nazwa bez polskich znaków i spacji, np. odpust-2026
+- data – w formacie RRRR-MM-DD, np. 2026-08-15
+- tytul – tytuł wpisu
+- skrot – krótki opis widoczny na stronie głównej
+- tresc – pełna treść wpisu; przy dłuższym tekście pole powinno pozostać w cudzysłowie
+- obraz – opcjonalna nazwa lub ścieżka zdjęcia, np. images/odpust.jpg; może pozostać puste
+
+Aby dodać zdjęcie:
+1. Wgraj zdjęcie do folderu images.
+2. W kolumnie obraz wpisz np. images/nazwa-zdjecia.jpg.
+
+Na stronie głównej automatycznie pokazują się trzy najnowsze wpisy.
+Pełna lista znajduje się na podstronie aktualnosci.html.
+
+WIDŻETY CODZIENNE
+
+- Data i link do Ewangelii zmieniają się automatycznie każdego dnia.
+- Widżet liturgii dnia jest pobierany z serwisu Opoka.
+- Kafelek Vatican News prowadzi do aktualnej polskiej wersji oficjalnego serwisu.
