@@ -66,3 +66,12 @@ WERSJA Z KARTAMI
 Sekcje „Parafia” i „Sakramenty” są pokazane jako eleganckie karty.
 Kliknięcie karty rozwija jej pełną treść. Otwarcie kolejnej karty zamyka poprzednią.
 Treść nadal edytuje się w tych samych plikach w folderze content.
+
+
+NOWY UKŁAD STRONY
+
+- Karty w sekcjach „Parafia” i „Sakramenty” prowadzą teraz do osobnych podstron.
+- W górnym menu po najechaniu kursorem rozwijają się listy podstron.
+- Na telefonie listę rozwija się przez kliknięcie nazwy „Parafia” lub „Sakramenty”.
+- Treść każdej podstrony nadal edytuje się w odpowiednim pliku w folderze content.
+- Sekcja lokalizacji zawiera podgląd Google Maps oraz przycisk „Otwórz w Google Maps”.
