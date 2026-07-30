@@ -66,7 +66,6 @@ Metryka chrztu świętego wydana nie wcześniej niż 6 miesięcy przed zgłoszen
 W nagłych przypadkach prosimy o kontakt telefoniczny z parafią.
 
 ## Pogrzeb katolicki
-
 Formalności należy uzgodnić w kancelarii parafialnej.
 W kancelarii parafii należy ustalić termin pogrzebu i uzupełnić dokumentację w księdze zmarłych.
 Wymaganym dokumentem jest karta zgonu z Urzędu Stanu Cywilnego.Jeżeli Zmarły mieszkał na terenie innej parafii, a rodzina chciałaby, aby został pochowany w parafii pw. św. Jana Chrzciciela w Jastrzębiu, to wymagana jest zgoda ks. Proboszcza parafii,na terenie której Zmarły mieszkał.   
