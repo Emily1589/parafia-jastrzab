@@ -1,0 +1,38 @@
+{
+  "parish_name": "Parafia św. Jana Chrzciciela w Jastrzębiu",
+  "hero_title": "Parafia św. Jana Chrzciciela w Jastrzębiu",
+  "hero_quote": "„Przygotujcie drogę Panu, prostujcie ścieżki dla Niego.”",
+  "sunday_masses": "8:00 | 10:00 | 12:00 | 16:00",
+  "weekday_masses": "7:00 | 7:30",
+  "weekday_note": "Od marca do grudnia również o 17:00",
+  "address": "ul. Jana Pawła II 8, 26-502 Jastrząb",
+  "phone": "48 628 40 06",
+  "phone_link": "+48486284006",
+  "email": "parafiajastrzab@vp.pl",
+  "pastor": "ks. mgr Andrzej Wiktor Wąsik",
+  "office_hours": "Godziny pracy kancelarii można uzupełnić po ich potwierdzeniu.",
+  "announcements": [
+    {
+      "title": "Ogłoszenia parafialne",
+      "date": "Najnowsze informacje",
+      "summary": "Najnowsze informacje duszpasterskie dotyczące życia naszej parafii.",
+      "body": "Tutaj wpisz pełną treść ogłoszeń parafialnych."
+    }
+  ],
+  "intentions": [
+    {
+      "title": "Intencje mszalne",
+      "date": "Bieżący tydzień",
+      "summary": "Porządek intencji mszalnych na bieżący tydzień.",
+      "body": "Tutaj wpisz pełny porządek intencji mszalnych."
+    }
+  ],
+  "events": [
+    {
+      "title": "Wydarzenia",
+      "date": "Najbliższe wydarzenia",
+      "summary": "Rekolekcje, odpusty, pielgrzymki oraz spotkania wspólnot.",
+      "body": "Tutaj wpisz szczegółowe informacje o wydarzeniu."
+    }
+  ]
+}
