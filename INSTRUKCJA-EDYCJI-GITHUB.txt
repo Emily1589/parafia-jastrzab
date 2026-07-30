@@ -115,3 +115,16 @@ podczas przewijania strony. Główna treść po lewej stronie została zwężona
 aby zachować proporcje i czytelność strony.
 
 Na telefonach i mniejszych tabletach panel przenosi się nad główną treść.
+
+
+NOWY PRAWY PANEL
+
+Z głównej kolumny zostały usunięte:
+- Msze Święte i nabożeństwa,
+- Kontakt,
+- Lokalizacja.
+
+Znajdują się teraz na stałe w prawym panelu razem z Ewangelią dnia,
+Liturgią dnia i Vatican News. Panel nie jest przyklejony podczas przewijania,
+ponieważ przy tej liczbie elementów wyglądałby zbyt ciężko i mógłby się ucinać.
+Na tabletach układa się w dwie kolumny, a na telefonach w jedną.
