@@ -1,29 +1,68 @@
-JAK EDYTOWAĆ STRONĘ PRZEZ GITHUB
+JAK EDYTOWAĆ ROZWIJANE PODSEKCJE PRZEZ GITHUB
 
-1. Wejdź do repozytorium parafia-jastrzab.
-2. Otwórz folder content.
-3. Kliknij plik odpowiadający sekcji:
-   - ogloszenia.md
-   - intencje.md
-   - wydarzenia.md
-   - msze.md
-   - o-parafii.md
-   - sakramenty.md
-   - cmentarz.md
-   - kontakt.md
-4. Kliknij ikonę ołówka „Edit this file”.
-5. Zmień wyłącznie tekst.
-6. Kliknij „Commit changes...” i ponownie „Commit changes”.
-7. Cloudflare opublikuje zmianę automatycznie, zwykle po kilkudziesięciu sekundach.
+W repozytorium otwórz folder content i wybierz odpowiedni plik.
 
-PROSTE ZASADY PISANIA
+PARAFIA
+- historia-parafii.md
+- proboszczowie.md
+- wikariusze.md
 
-# Główny tytuł
+SAKRAMENTY
+- chrzest.md
+- komunia.md
+- bierzmowanie.md
+- malzenstwo.md
+- namaszczenie-chorych.md
+- pogrzeb.md
+
+POZOSTAŁE SEKCJE
+- ogloszenia.md
+- intencje.md
+- wydarzenia.md
+- msze.md
+- cmentarz.md
+- kontakt.md
+
+EDYCJA
+1. Kliknij wybrany plik.
+2. Kliknij ikonę ołówka „Edit this file”.
+3. Zmień tekst.
+4. Kliknij „Commit changes...”.
+5. Ponownie kliknij „Commit changes”.
+6. Cloudflare automatycznie opublikuje zmianę.
+
+PROSTE FORMATOWANIE
+# Tytuł
 ## Mniejszy nagłówek
 - punkt listy
 1. punkt numerowany
 **tekst pogrubiony**
 [tekst linku](https://adres.pl)
 
-WAŻNE
 Nie zmieniaj nazw plików ani folderu content.
+
+
+EDYCJA INTENCJI MSZALNYCH
+
+Intencje znajdują się w pliku:
+content/intencje.csv
+
+Każdy wiersz ma 6 kolumn oddzielonych średnikiem:
+data;dzien;swieto;godzina;zamawiajacy;intencja
+
+Przykład:
+10 listopada;Poniedziałek;Św. Leona Wielkiego;7:00;Rodzina Kowalskich;† Jana Kowalskiego
+
+Aby kilka intencji znalazło się pod jednym dniem, wpisz w kolejnych wierszach dokładnie tę samą:
+- datę,
+- nazwę dnia,
+- nazwę święta.
+
+Nie usuwaj pierwszego wiersza z nazwami kolumn.
+
+
+WERSJA Z KARTAMI
+
+Sekcje „Parafia” i „Sakramenty” są pokazane jako eleganckie karty.
+Kliknięcie karty rozwija jej pełną treść. Otwarcie kolejnej karty zamyka poprzednią.
+Treść nadal edytuje się w tych samych plikach w folderze content.

@@ -6,10 +6,10 @@
 
 ## Dni powszednie
 
-**7:00 i 7:30** 
+**7:00 i 7:30**
 
 Od marca do grudnia również o **17:00**.
 
 ## Spowiedź
 
-Spowiedź zwykle podczas każdej Mszy Świętej.
+Spowiedź zwykle przed każdą Mszą Świętą.
