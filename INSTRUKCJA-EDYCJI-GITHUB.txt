@@ -1,0 +1,29 @@
+JAK EDYTOWAĆ STRONĘ PRZEZ GITHUB
+
+1. Wejdź do repozytorium parafia-jastrzab.
+2. Otwórz folder content.
+3. Kliknij plik odpowiadający sekcji:
+   - ogloszenia.md
+   - intencje.md
+   - wydarzenia.md
+   - msze.md
+   - o-parafii.md
+   - sakramenty.md
+   - cmentarz.md
+   - kontakt.md
+4. Kliknij ikonę ołówka „Edit this file”.
+5. Zmień wyłącznie tekst.
+6. Kliknij „Commit changes...” i ponownie „Commit changes”.
+7. Cloudflare opublikuje zmianę automatycznie, zwykle po kilkudziesięciu sekundach.
+
+PROSTE ZASADY PISANIA
+
+# Główny tytuł
+## Mniejszy nagłówek
+- punkt listy
+1. punkt numerowany
+**tekst pogrubiony**
+[tekst linku](https://adres.pl)
+
+WAŻNE
+Nie zmieniaj nazw plików ani folderu content.
