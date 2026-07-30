@@ -1,0 +1,23 @@
+PACZKA STRONY PARAFII — WAŻNE
+
+Po rozpakowaniu NIE wgrywaj folderu PARAFIA-JASTRZAB-DO-WGRANIA jako jednego folderu.
+Otwórz go i wgraj na GitHub CAŁĄ JEGO ZAWARTOŚĆ.
+
+W katalogu głównym repozytorium GitHub muszą być widoczne:
+- admin (folder)
+- content (folder)
+- images (folder)
+- index.html
+- kosciol-jastrzab.webp
+- netlify.toml
+
+W folderze admin muszą być:
+- index.html
+- config.yml
+
+W folderze content musi być:
+- settings.json
+
+Po wgraniu poczekaj 1–3 minuty na automatyczne wdrożenie Netlify.
+Strona: https://parafia-jastrzab.netlify.app/
+Panel:  https://parafia-jastrzab.netlify.app/admin/
