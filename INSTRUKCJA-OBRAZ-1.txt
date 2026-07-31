@@ -1,0 +1,10 @@
+WERSJA STRONY WEDŁUG OBRAZU 1
+
+1. Główny wygląd znajduje się w pliku index.html.
+2. Godziny Mszy i dane kontaktowe są wpisane bezpośrednio w index.html.
+3. Aktualności nadal pobierają się z content/aktualnosci.csv.
+4. Ogłoszenia pobierają się z content/ogloszenia.md.
+5. Intencje pobierają się z content/intencje.csv.
+6. Automatyczna data i link do liturgii zmieniają się codziennie.
+7. Wszystkie ikony są wykonane jako wektorowe SVG bez dodatkowych bibliotek.
+8. Aby wdrożyć stronę, wgraj wszystkie pliki z tej paczki bezpośrednio do głównego katalogu repozytorium GitHub.
