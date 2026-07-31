@@ -1,0 +1,18 @@
+NOWY SZABLON STRONY PARAFIALNEJ
+
+Ta wersja została zbudowana od podstaw.
+
+NAJWAŻNIEJSZE ZMIANY
+- główna treść jest po lewej stronie,
+- stały panel informacyjny jest po prawej stronie,
+- w panelu znajdują się Msze Święte, Ewangelia, Liturgia dnia, Kontakt, mapa i Vatican News,
+- aktualności działają jak blog,
+- ogłoszenia i intencje są widoczne bez przeładowania strony,
+- wygląd jest lżejszy i bardziej spójny.
+
+WDROŻENIE
+1. Rozpakuj ZIP.
+2. Wgraj ZAWARTOŚĆ folderu do głównego katalogu repozytorium GitHub.
+3. Zastąp wszystkie stare pliki.
+4. Nie wgrywaj samego pliku ZIP ani folderu nadrzędnego.
+5. Po wdrożeniu odśwież stronę skrótem Ctrl+F5.
