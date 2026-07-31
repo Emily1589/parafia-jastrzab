@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Parafia św. Jana Chrzciciela w Jastrzębiu – aktualności, ogłoszenia, intencje, Msze Święte i sakramenty.">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Parafia św. Jana Chrzciciela w Jastrzębiu – aktualności, ogłoszenia, intencje, Msze Święte i sakramenty." name="description"/>
 <title>Parafia św. Jana Chrzciciela w Jastrzębiu</title>
 <style>
 :root{
@@ -334,262 +335,262 @@ footer{
   .footer-inner{padding:22px 0;align-items:flex-start;flex-wrap:wrap}
   .footer-copy{margin-left:0}
 }
+
+/* Profesjonalny, spójny system ikon */
+.icon-sprite{position:absolute;width:0;height:0;overflow:hidden}
+.icon svg{display:block;width:100%;height:100%;shape-rendering:geometricPrecision}
+.info-card .icon,.sacrament-card .icon{width:68px;height:68px;flex-basis:68px;padding:6px;border-radius:16px;background:linear-gradient(145deg,#fff,#f4efe4);border:1px solid #e7dcc8;box-shadow:0 5px 14px rgba(29,72,47,.08);transition:transform .2s ease,box-shadow .2s ease}
+.info-card:hover .icon,.sacrament-card:hover .icon{transform:translateY(-2px);box-shadow:0 8px 18px rgba(29,72,47,.13)}
+.info-card{grid-template-columns:76px 1fr;min-height:155px}.sacrament-card{grid-template-columns:76px 1fr;min-height:144px}
+.side-head .icon{width:50px;height:50px;flex-basis:50px;padding:2px}.side-head .icon svg{filter:drop-shadow(0 1px 0 rgba(0,0,0,.08))}
+@media(max-width:700px){.info-card,.sacrament-card{grid-template-columns:70px 1fr}.info-card .icon,.sacrament-card .icon{width:62px;height:62px;flex-basis:62px}}
 </style>
 </head>
-<body>
-
+<body><svg aria-hidden="true" class="icon-sprite" focusable="false" height="0" style="position:absolute;overflow:hidden" width="0"><defs>
+<symbol id="i-church" viewbox="0 0 64 64"><path d="M12 56V29l20-16 20 16v27z" fill="#fffaf0"></path><path d="M28 41h8v15h-8z" fill="#f3b941"></path><path d="M17 31h10v11H17zM37 31h10v11H37z" fill="#b8dfc6"></path><path d="M8 56h48M12 56V29l20-16 20 16v27M32 13V5M27 8h10M17 31h10v11H17zM37 31h10v11H37zM28 56V41h8v15" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"></path></symbol>
+<symbol id="i-clergy" viewbox="0 0 64 64"><circle cx="23" cy="20" fill="#f3b941" r="8"></circle><circle cx="42" cy="23" fill="#8c62a8" r="7"></circle><path d="M10 56V42c0-8 5-13 13-13s13 5 13 13v14z" fill="#b8dfc6"></path><path d="M34 56V44c0-7 4-11 9-11s10 4 10 11v12z" fill="#8c62a8"></path><path d="M15 20a8 8 0 1 0 16 0 8 8 0 1 0-16 0M10 56V42c0-8 5-13 13-13s13 5 13 13v14M35 23a7 7 0 1 0 14 0 7 7 0 1 0-14 0M34 56V44c0-7 4-11 9-11s10 4 10 11v12" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></symbol>
+<symbol id="i-window" viewbox="0 0 64 64"><path d="M15 58V22C15 12 22 6 32 6s17 6 17 16v36z" fill="#f3b941"></path><path d="M20 53V23c0-7 5-12 12-12s12 5 12 12v30z" fill="#eaf5ee"></path><path d="M21 24h10v11H21z" fill="#e36b64"></path><path d="M33 13h10v20H33z" fill="#5aa6c5"></path><path d="M21 38h10v14H21z" fill="#73a85a"></path><path d="M33 36h10v16H33z" fill="#7b5aa0"></path><path d="M15 58V22C15 12 22 6 32 6s17 6 17 16v36zM20 23l24 30M44 23L20 53M32 11v42M20 36h24" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></symbol>
+<symbol id="i-baptism" viewbox="0 0 64 64"><path d="M10 29h44c-1 15-10 24-22 24S11 44 10 29z" fill="#8fd2f0"></path><path d="M16 34h32c-3 7-8 11-16 11s-13-4-16-11z" fill="#fff"></path><path d="M32 53v6M22 59h20M10 29h44c-1 15-10 24-22 24S11 44 10 29z" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"></path><path d="M32 8c4 5 5 8 5 11a5 5 0 1 1-10 0c0-3 1-6 5-11z" fill="#4aa9dc" stroke="#161616" stroke-width="2.4"></path></symbol>
+<symbol id="i-eucharist" viewbox="0 0 64 64"><circle cx="32" cy="18" fill="#fff7df" r="14" stroke="#161616" stroke-width="2.7"></circle><text fill="#9a6c0f" font-family="Georgia,serif" font-size="11" font-weight="700" text-anchor="middle" x="32" y="22">IHS</text><path d="M18 31h28c0 12-5 19-14 19s-14-7-14-19z" fill="#f3b941"></path><path d="M18 31h28M18 31c0 12 5 19 14 19s14-7 14-19M32 50v9M22 59h20" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"></path></symbol>
+<symbol id="i-dove" viewbox="0 0 64 64"><path d="M8 36c11 1 18-5 23-14 5 6 11 9 23 8-5 7-11 12-20 13 1 6 0 11-2 15-6-5-10-10-11-15-5 2-9 0-13-7z" fill="#fff"></path><path d="M8 36c11 1 18-5 23-14 5 6 11 9 23 8-5 7-11 12-20 13 1 6 0 11-2 15-6-5-10-10-11-15-5 2-9 0-13-7zM29 41l14-8" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"></path><path d="M43 32c4-5 8-5 11-3-3 4-7 6-11 3zM40 36c4 0 7 2 8 5-5 1-8-1-8-5z" fill="#6d9f3d" stroke="#161616" stroke-linejoin="round" stroke-width="2"></path></symbol>
+<symbol id="i-marriage" viewbox="0 0 64 64"><path d="M32 55S7 40 7 21c0-9 12-14 19-6l6 7 6-7c7-8 19-3 19 6 0 19-25 34-25 34z" fill="#ed4454" stroke="#161616" stroke-linejoin="round" stroke-width="2.7"></path><circle cx="27" cy="36" fill="none" r="10" stroke="#f3b941" stroke-width="4"></circle><circle cx="39" cy="36" fill="none" r="10" stroke="#f3b941" stroke-width="4"></circle></symbol>
+<symbol id="i-oil" viewbox="0 0 64 64"><path d="M14 25h28l4 29H11z" fill="#9ac449"></path><path d="M31 12h12l5 12H28z" fill="#c4df68"></path><rect fill="#fff" height="9" rx="1" width="8" x="37" y="15"></rect><path d="M14 25h28l4 29H11zM31 12h12l5 12H28zM37 15h8v9M22 25V16h7v9M18 16h15" fill="none" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"></path><path d="M45 34c8 0 12 4 12 10s-4 10-12 10" fill="none" stroke="#161616" stroke-linecap="round" stroke-width="2.7"></path></symbol>
+<symbol id="i-coffin" viewbox="0 0 64 64"><path d="M13 27 32 12l19 15-4 28H17z" fill="#7b4c91" stroke="#161616" stroke-linejoin="round" stroke-width="2.8"></path><path d="M32 25v18M24 34h16" stroke="#f5cf55" stroke-linecap="round" stroke-width="3.2"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 64 64"><circle cx="32" cy="32" fill="#fff" r="24"></circle><circle cx="32" cy="32" fill="none" r="20" stroke="#163d26" stroke-width="2.6"></circle><path d="M32 19v14l10 6M32 12v4M52 32h-4M32 52v-4M12 32h4" fill="none" stroke="#163d26" stroke-linecap="round" stroke-width="2.8"></path></symbol>
+<symbol id="i-bible" viewbox="0 0 64 64"><path d="M7 14c10-3 18-1 25 5v35c-7-6-15-8-25-5zM57 14c-10-3-18-1-25 5v35c7-6 15-8 25-5z" fill="#fff" stroke="#161616" stroke-linejoin="round" stroke-width="2.7"></path><path d="M32 19v35M13 25h13M38 25h13M13 34h13M38 34h13" stroke="#f3b941" stroke-linecap="round" stroke-width="2.8"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 64 64"><rect fill="#fff" height="42" rx="4" stroke="#161616" stroke-width="2.7" width="46" x="9" y="13"></rect><path d="M9 23h46M18 8v10M46 8v10" stroke="#161616" stroke-linecap="round" stroke-width="2.7"></path><g fill="#163d26"><rect height="6" rx="1" width="6" x="17" y="30"></rect><rect height="6" rx="1" width="6" x="29" y="30"></rect><rect height="6" rx="1" width="6" x="41" y="30"></rect><rect height="6" rx="1" width="6" x="17" y="42"></rect><rect height="6" rx="1" width="6" x="29" y="42"></rect><rect height="6" rx="1" width="6" x="41" y="42"></rect></g></symbol>
+<symbol id="i-globe" viewbox="0 0 64 64"><circle cx="32" cy="32" fill="#71c7e7" r="24" stroke="#161616" stroke-width="2.7"></circle><path d="M14 25l10-8 9 3 2 7-7 3-2 9-8-2zM38 11l8 5 5 9-4 4-7-4-4-7zM37 38l10-2 4 8-9 9-7-4z" fill="#75aa55" stroke="#161616" stroke-linejoin="round" stroke-width="1.8"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 64 64"><path d="M18 9l10 12-7 8c5 10 13 18 23 23l8-7 12 10-7 9C34 62 2 30 9 7z" fill="#fff" stroke="#161616" stroke-linejoin="round" stroke-width="2.7"></path></symbol>
+<symbol id="i-location-church" viewbox="0 0 64 64"><path d="M14 56V29l18-16 18 16v27z" fill="#fff" stroke="#161616" stroke-linejoin="round" stroke-width="2.7"></path><path d="M28 41h8v15h-8z" fill="#f3b941" stroke="#161616" stroke-width="2.4"></path><path d="M32 13V5M27 8h10M8 56h48M18 32h8v9h-8M38 32h8v9h-8" fill="none" stroke="#161616" stroke-linecap="round" stroke-width="2.7"></path></symbol>
+</defs></svg>
 <header class="site-header">
-  <div class="wrap header-inner">
-    <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">☰</button>
-    <a class="brand" href="index.html">
-      <span class="brand-cross" aria-hidden="true"></span>
-      <span class="brand-name">
-        <strong>PARAFIA</strong>
-        <span>św. Jana Chrzciciela</span>
-        <span>w Jastrzębiu</span>
-      </span>
-    </a>
-    <nav class="main-nav" id="mainNav">
-      <ul>
-        <li><a class="active" href="index.html">Strona główna</a></li>
-        <li><a href="#aktualnosci">Aktualności</a></li>
-        <li><a href="#ogloszenia">Ogłoszenia</a></li>
-        <li><a href="#intencje">Intencje</a></li>
-        <li><a href="historia-parafii.html">Historia</a></li>
-        <li><a href="duszpasterze.html">Duszpasterze</a></li>
-        <li><a href="#sakramenty">Sakramenty⌄</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="wrap header-inner">
+<button aria-label="Otwórz menu" class="menu-toggle" id="menuToggle">☰</button>
+<a class="brand" href="index.html">
+<span aria-hidden="true" class="brand-cross"></span>
+<span class="brand-name">
+<strong>PARAFIA</strong>
+<span>św. Jana Chrzciciela</span>
+<span>w Jastrzębiu</span>
+</span>
+</a>
+<nav class="main-nav" id="mainNav">
+<ul>
+<li><a class="active" href="index.html">Strona główna</a></li>
+<li><a href="#aktualnosci">Aktualności</a></li>
+<li><a href="#ogloszenia">Ogłoszenia</a></li>
+<li><a href="#intencje">Intencje</a></li>
+<li><a href="historia-parafii.html">Historia</a></li>
+<li><a href="duszpasterze.html">Duszpasterze</a></li>
+<li><a href="#sakramenty">Sakramenty⌄</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ul>
+</nav>
+</div>
 </header>
-
 <main class="wrap page-shell">
-  <div class="main-column">
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Parafia<br>św. Jana Chrzciciela<br>w Jastrzębiu</h1>
-        <blockquote>„Oto Baranek Boży,<br>który gładzi grzechy świata.”<cite>(J 1,29)</cite></blockquote>
-      </div>
-    </section>
-
-    <section class="quick-grid">
-      <a class="quick-card" href="#aktualnosci">
-        <span class="icon">
-          <svg viewBox="0 0 64 64" aria-hidden="true">
-            <path class="icon-white" d="M12 10h34v44H12z"/><path class="icon-green" d="M19 18h20v8H19z"/>
-            <path class="icon-stroke" d="M12 10h34v44H12zM18 18h20M18 26h20M18 35h20M18 43h13M46 17h7v33H46"/>
-          </svg>
-        </span>
-        <h2>Aktualności</h2><p>Bądź na bieżąco z życiem parafii</p><span class="round-arrow">→</span>
-      </a>
-      <a class="quick-card" href="#ogloszenia">
-        <span class="icon">
-          <svg viewBox="0 0 64 64" aria-hidden="true">
-            <path class="icon-gold" d="M10 29h11l25-13v31L21 35H10z"/><path class="icon-white" d="M21 35l4 17h9l-6-14z"/>
-            <path class="icon-stroke" d="M10 29h11l25-13v31L21 35H10zM21 35l4 17h9l-6-14M51 24l6-5M52 32h8M51 40l6 5"/>
-          </svg>
-        </span>
-        <h2>Ogłoszenia</h2><p>Sprawdź najnowsze ogłoszenia parafialne</p><span class="round-arrow">→</span>
-      </a>
-      <a class="quick-card" href="#intencje">
-        <span class="icon">
-          <svg viewBox="0 0 64 64" aria-hidden="true">
-            <path class="icon-gold" d="M18 13h28c0 17-5 24-14 24S18 30 18 13z"/><path class="icon-white" d="M23 18h18v7H23z"/>
-            <path class="icon-stroke" d="M18 13h28c0 17-5 24-14 24S18 30 18 13zM32 37v13M23 52h18M22 19h20"/>
-          </svg>
-        </span>
-        <h2>Intencje</h2><p>Zamów intencję mszalną</p><span class="round-arrow">→</span>
-      </a>
-    </section>
-
-    <section class="section" id="aktualnosci">
-      <div class="section-header">
-        <h2>Najnowsze aktualności</h2>
-        <a class="section-more" href="aktualnosci.html">Zobacz wszystkie →</a>
-      </div>
-      <div class="news-list" id="newsList"><p>Wczytywanie aktualności…</p></div>
-    </section>
-
-    <section class="section" id="parafia">
-      <div class="info-grid">
-        <a class="info-card" href="historia-parafii.html">
-          <span class="icon">
-            <svg viewBox="0 0 64 64"><path class="icon-white" d="M14 55V27l18-14 18 14v28z"/><path class="icon-gold" d="M28 38h8v17h-8z"/><path class="icon-stroke" d="M14 55V27l18-14 18 14v28M8 55h48M32 13V5M27 8h10M23 30h6v8h-6M35 30h6v8h-6M28 55V39h8v16"/></svg>
-          </span>
-          <span><h3>Historia Parafii</h3><p>Poznaj historię naszej parafii i kościoła.</p><b>Dowiedz się więcej →</b></span>
-        </a>
-        <a class="info-card" href="duszpasterze.html">
-          <span class="icon">
-            <svg viewBox="0 0 64 64"><circle class="icon-gold" cx="24" cy="20" r="9"/><circle class="icon-purple" cx="43" cy="24" r="8"/><path class="icon-green" d="M10 55V41c0-8 7-13 14-13s14 5 14 13v14z"/><path class="icon-purple" d="M34 55V43c0-7 5-11 10-11s10 4 10 11v12z"/><path class="icon-stroke" d="M15 20a9 9 0 1 0 18 0 9 9 0 1 0-18 0M10 55V41c0-8 7-13 14-13s14 5 14 13v14M35 24a8 8 0 1 0 16 0 8 8 0 1 0-16 0M34 55V43c0-7 5-11 10-11s10 4 10 11v12"/></svg>
-          </span>
-          <span><h3>Duszpasterze</h3><p>Poznaj księży posługujących w parafii.</p><b>Zobacz więcej →</b></span>
-        </a>
-        <a class="info-card" href="#sakramenty">
-          <span class="icon">
-            <svg viewBox="0 0 64 64"><path class="icon-gold" d="M14 6h36v52H14z"/><path fill="#e4675d" d="M18 10h9v18h-9z"/><path fill="#55a4bf" d="M27 10h11v19H27z"/><path fill="#74548d" d="M38 10h8v20h-8z"/><path fill="#68a55a" d="M18 28h12v26H18z"/><path fill="#e2b64c" d="M30 29h16v25H30z"/><path class="icon-stroke" d="M14 58V6h36v52zM18 10l28 44M46 10L18 54M27 10v44M38 10v44M18 28h28"/></svg>
-          </span>
-          <span><h3>Sakramenty</h3><p>Informacje o sakramentach i przygotowaniu.</p><b>Zobacz więcej →</b></span>
-        </a>
-      </div>
-    </section>
-
-    <section class="section" id="sakramenty">
-      <div class="section-header"><h2>Sakramenty</h2></div>
-      <div class="sacrament-grid">
-        <a class="sacrament-card" href="chrzest.html">
-          <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-blue" d="M10 28h44c-2 17-10 25-22 25S12 45 10 28z"/><path class="icon-white" d="M17 32h30c-3 7-8 11-15 11s-12-4-15-11z"/><path class="icon-stroke" d="M10 28h44c-2 17-10 25-22 25S12 45 10 28zM32 53v6M22 59h20M22 19c0 5 3 8 3 8M42 19c0 5-3 8-3 8"/><path fill="#5ab5e5" d="M30 12c0-4 2-7 2-7s3 3 3 7a3 3 0 1 1-5 0z"/></svg></span>
-          <span><h3>Chrzest</h3><p>Przyjęcie do wspólnoty Kościoła.</p><b>Dowiedz się więcej →</b></span>
-        </a>
-        <a class="sacrament-card" href="komunia.html">
-          <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-gold" d="M18 31h28c0 13-5 20-14 20s-14-7-14-20z"/><circle class="icon-white" cx="32" cy="20" r="15"/><path class="icon-stroke" d="M17 31h30M18 31c0 13 5 20 14 20s14-7 14-20M32 51v8M23 59h18M17 20a15 15 0 1 0 30 0 15 15 0 1 0-30 0"/><text x="32" y="24" text-anchor="middle" font-size="12" font-family="Georgia" fill="#9a6c0f">IHS</text></svg></span>
-          <span><h3>Komunia Święta</h3><p>Pierwsze spotkanie z Jezusem.</p><b>Zobacz więcej →</b></span>
-        </a>
-        <a class="sacrament-card" href="bierzmowanie.html">
-          <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-white" d="M10 34c11 1 18-5 22-14 5 7 11 10 21 9-5 7-11 11-18 12 1 7 0 12-2 16-6-6-9-10-10-15-5 2-9 0-13-8z"/><path class="icon-stroke" d="M10 34c11 1 18-5 22-14 5 7 11 10 21 9-5 7-11 11-18 12 1 7 0 12-2 16-6-6-9-10-10-15-5 2-9 0-13-8zM31 39l13-7"/><path class="icon-olive" d="M43 31c4-5 8-5 10-3-3 4-6 6-10 3zM40 35c4 0 6 2 7 5-5 1-7-1-7-5z"/><path class="icon-stroke" d="M43 31c4-5 8-5 10-3-3 4-6 6-10 3zM40 35c4 0 6 2 7 5-5 1-7-1-7-5z"/></svg></span>
-          <span><h3>Bierzmowanie</h3><p>Umocnienie Duchem Świętym.</p><b>Zobacz więcej →</b></span>
-        </a>
-        <a class="sacrament-card" href="malzenstwo.html">
-          <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-red" d="M32 54S7 39 7 21c0-9 12-14 19-6l6 7 6-7c7-8 19-3 19 6 0 18-25 33-25 33z"/><circle fill="none" stroke="#efb432" stroke-width="4" cx="27" cy="36" r="10"/><circle fill="none" stroke="#efb432" stroke-width="4" cx="39" cy="36" r="10"/><path class="icon-stroke" d="M32 54S7 39 7 21c0-9 12-14 19-6l6 7 6-7c7-8 19-3 19 6 0 18-25 33-25 33z"/></svg></span>
-          <span><h3>Małżeństwo</h3><p>Sakrament miłości na całe życie.</p><b>Zobacz więcej →</b></span>
-        </a>
-        <a class="sacrament-card wide" href="namaszczenie-chorych.html">
-          <span class="icon"><svg viewBox="0 0 64 64"><path fill="#8db63f" d="M15 23h26l4 31H12z"/><path fill="#b8d84d" d="M31 12h12l5 10H29z"/><path class="icon-white" d="M39 15h7v8h-7z"/><path class="icon-stroke" d="M15 23h26l4 31H12zM31 12h12l5 10H29zM39 15h7v8M22 23V15h7v8M18 15h15"/><path class="icon-stroke" d="M45 33c8 0 12 4 12 10s-4 10-12 10"/></svg></span>
-          <span><h3>Namaszczenie chorych</h3><p>Udzielenie Bożej łaski w chorobie i cierpieniu.</p><b>Dowiedz się więcej →</b></span>
-        </a>
-        <a class="sacrament-card wide" href="pogrzeb.html">
-          <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-purple" d="M12 27l20-15 20 15-4 27H16z"/><path class="icon-stroke" d="M12 27l20-15 20 15-4 27H16zM24 34h16M32 26v17"/><path stroke="#f2c94c" stroke-width="3" d="M24 34h16M32 26v17"/></svg></span>
-          <span><h3>Pogrzeb</h3><p>Modlitwa i nadzieja na życie wieczne.</p><b>Dowiedz się więcej →</b></span>
-        </a>
-      </div>
-    </section>
-
-    <section class="section" id="galeria">
-      <div class="section-header">
-        <h2>Galeria zdjęć</h2>
-      </div>
-      <div class="gallery-grid">
-        <figure><img src="kosciol-jastrzab.webp" alt="Kościół parafialny"></figure>
-        <figure><img src="kosciol-jastrzab.webp" alt="Wnętrze kościoła" style="object-position:30% center"></figure>
-        <figure><img src="kosciol-jastrzab.webp" alt="Kościół od strony dzwonnicy" style="object-position:left center"></figure>
-        <figure><img src="kosciol-jastrzab.webp" alt="Wieża kościoła" style="object-position:70% center"></figure>
-        <figure><img src="kosciol-jastrzab.webp" alt="Wejście do kościoła" style="object-position:right center"></figure>
-      </div>
-      <a class="gallery-button" href="#">Zobacz więcej zdjęć →</a>
-    </section>
-
-    <section class="section" id="ogloszenia">
-      <div class="section-header"><h2>Ogłoszenia parafialne</h2></div>
-      <div class="side-card"><div class="side-body editable" data-md="content/ogloszenia.md">Wczytywanie ogłoszeń…</div></div>
-    </section>
-
-    <section class="section" id="intencje">
-      <div class="section-header"><h2>Intencje mszalne</h2></div>
-      <div style="overflow:auto;border:1px solid var(--line);border-radius:10px">
-        <table style="width:100%;border-collapse:collapse;min-width:720px;background:#fff">
-          <thead><tr style="background:var(--green-100);color:var(--green-900)">
-            <th style="padding:10px;text-align:left">Data</th><th style="padding:10px;text-align:left">Dzień</th>
-            <th style="padding:10px;text-align:left">Godzina</th><th style="padding:10px;text-align:left">Zamawiający</th>
-            <th style="padding:10px;text-align:left">Intencja</th>
-          </tr></thead>
-          <tbody id="intentionsBody"><tr><td colspan="5" style="padding:14px">Wczytywanie intencji…</td></tr></tbody>
-        </table>
-      </div>
-    </section>
-  </div>
-
-  <aside class="sidebar">
-    <section class="side-card">
-      <div class="side-head">
-        <span class="icon">
-          <svg viewBox="0 0 64 64"><circle class="icon-white" cx="32" cy="32" r="24"/><path class="icon-stroke" d="M32 15v18l11 7M32 8v5M56 32h-5M32 56v-5M8 32h5"/></svg>
-        </span>
-        <h2>MSZE ŚWIĘTE<br>I NABOŻEŃSTWA</h2>
-      </div>
-      <div class="side-body">
-        <h3>Niedziele i uroczystości</h3><ul><li>8:00</li><li>10:00</li><li>12:00</li><li>16:00</li></ul>
-        <h3>Święta zniesione</h3><ul><li>8:00</li><li>10:00</li><li>17:00</li></ul>
-        <h3>Dni powszednie</h3><ul><li>7:00</li><li>7:30</li><li>17:00 <small>(od marca do grudnia)</small></li></ul>
-        <a class="side-action" href="#msze">Zobacz plan nabożeństw →</a>
-      </div>
-    </section>
-
-    <section class="side-card">
-      <div class="side-head">
-        <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-white" d="M7 13c10-3 18-1 25 5v36c-7-6-15-8-25-5zM57 13c-10-3-18-1-25 5v36c7-6 15-8 25-5z"/><path class="icon-stroke" d="M7 13c10-3 18-1 25 5v36c-7-6-15-8-25-5zM57 13c-10-3-18-1-25 5v36c7-6 15-8 25-5zM32 18v36"/><path stroke="#efb432" stroke-width="4" d="M13 25h13M38 25h13"/></svg></span>
-        <h2>EWANGELIA Z DNIA</h2>
-      </div>
-      <div class="side-body">
-        <div class="side-date"><strong id="todayDate">Dzisiejsza data</strong><span id="todayWeekday"></span></div>
-        <p>„Czytaj Ewangelię dnia i rozważ Słowo Boże”</p>
-        <a class="side-action" id="todayGospelLink" href="https://opoka.org.pl/liturgia" target="_blank" rel="noopener">Czytaj →</a>
-      </div>
-    </section>
-
-    <section class="side-card">
-      <div class="side-head">
-        <span class="icon"><svg viewBox="0 0 64 64"><rect class="icon-white" x="9" y="13" width="46" height="42" rx="3"/><path class="icon-stroke" d="M9 22h46M18 8v10M46 8v10M18 30h6M30 30h6M42 30h6M18 41h6M30 41h6M42 41h6"/></svg></span>
-        <h2>LITURGIA DNIA</h2>
-      </div>
-      <div class="side-body">
-        <div class="side-date"><strong id="liturgyDate">Dzisiejsza data</strong></div>
-        <p>Pełne czytania mszalne i wspomnienie liturgiczne.</p>
-        <a class="side-action" id="liturgyLink" href="https://opoka.org.pl/liturgia" target="_blank" rel="noopener">Zobacz czytania →</a>
-      </div>
-    </section>
-
-    <section class="side-card">
-      <div class="side-head">
-        <span class="icon"><svg viewBox="0 0 64 64"><circle fill="#6ec3e8" cx="32" cy="32" r="24"/><path class="icon-green" d="M14 25l11-8 8 3 2 7-7 3-2 9-8-2zM38 11l8 5 5 9-4 4-7-4-4-7zM37 38l10-2 4 8-9 9-7-4z"/><circle class="icon-stroke" cx="32" cy="32" r="24"/></svg></span>
-        <h2>VATICAN NEWS</h2>
-      </div>
-      <div class="side-body">
-        <p>Najważniejsze informacje z Kościoła katolickiego na świecie.</p>
-        <a class="side-action" href="https://www.vaticannews.va/pl.html" target="_blank" rel="noopener">Przejdź do Vatican News →</a>
-      </div>
-    </section>
-
-    <section class="side-card" id="kontakt">
-      <div class="side-head">
-        <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-white" d="M18 9l10 12-7 8c5 10 13 18 23 23l8-7 12 10-7 9C34 62 2 30 9 7z"/><path class="icon-stroke" d="M18 9l10 12-7 8c5 10 13 18 23 23l8-7 12 10-7 9C34 62 2 30 9 7z"/></svg></span>
-        <h2>KONTAKT</h2>
-      </div>
-      <div class="side-body">
-        <strong>Parafia pw. św. Jana Chrzciciela w Jastrzębiu</strong>
-        <p class="contact-line">ul. Jana Pawła II 8<br>26-502 Jastrząb<br>woj. mazowieckie</p>
-        <p class="contact-line"><b>T:</b> <a href="tel:+48486284006">+48 48 628 40 06</a><br><b>E:</b> <a href="mailto:parafiajastrzab@vp.pl">parafiajastrzab@vp.pl</a></p>
-      </div>
-    </section>
-
-    <section class="side-card" id="lokalizacja">
-      <div class="side-head">
-        <span class="icon"><svg viewBox="0 0 64 64"><path class="icon-white" d="M14 56V28l18-15 18 15v28z"/><path class="icon-gold" d="M28 40h8v16h-8z"/><path class="icon-stroke" d="M14 56V28l18-15 18 15v28M8 56h48M32 13V6M27 9h10M24 31h6v7h-6M36 31h6v7h-6M28 56V40h8v16"/></svg></span>
-        <h2>LOKALIZACJA</h2>
-      </div>
-      <div class="side-body location-body">
-        <iframe title="Mapa parafii" loading="lazy" src="https://www.google.com/maps?q=Parafia%20%C5%9Bw.%20Jana%20Chrzciciela%20w%20Jastrz%C4%99biu%2C%20ul.%20Jana%20Paw%C5%82a%20II%208&output=embed"></iframe>
-        <p>Jak dojechać do naszej parafii?</p>
-        <a class="side-action" href="https://maps.app.goo.gl/ZnNGBZPzrGBD1JJr7" target="_blank" rel="noopener">Sprawdź trasę →</a>
-      </div>
-    </section>
-  </aside>
+<div class="main-column">
+<section class="hero">
+<div class="hero-content">
+<h1>Parafia<br/>św. Jana Chrzciciela<br/>w Jastrzębiu</h1>
+<blockquote>„Oto Baranek Boży,<br/>który gładzi grzechy świata.”<cite>(J 1,29)</cite></blockquote>
+</div>
+</section>
+<section class="quick-grid">
+<a class="quick-card" href="#aktualnosci">
+<span class="icon">
+<svg aria-hidden="true" viewbox="0 0 64 64">
+<path class="icon-white" d="M12 10h34v44H12z"></path><path class="icon-green" d="M19 18h20v8H19z"></path>
+<path class="icon-stroke" d="M12 10h34v44H12zM18 18h20M18 26h20M18 35h20M18 43h13M46 17h7v33H46"></path>
+</svg>
+</span>
+<h2>Aktualności</h2><p>Bądź na bieżąco z życiem parafii</p><span class="round-arrow">→</span>
+</a>
+<a class="quick-card" href="#ogloszenia">
+<span class="icon">
+<svg aria-hidden="true" viewbox="0 0 64 64">
+<path class="icon-gold" d="M10 29h11l25-13v31L21 35H10z"></path><path class="icon-white" d="M21 35l4 17h9l-6-14z"></path>
+<path class="icon-stroke" d="M10 29h11l25-13v31L21 35H10zM21 35l4 17h9l-6-14M51 24l6-5M52 32h8M51 40l6 5"></path>
+</svg>
+</span>
+<h2>Ogłoszenia</h2><p>Sprawdź najnowsze ogłoszenia parafialne</p><span class="round-arrow">→</span>
+</a>
+<a class="quick-card" href="#intencje">
+<span class="icon">
+<svg aria-hidden="true" viewbox="0 0 64 64">
+<path class="icon-gold" d="M18 13h28c0 17-5 24-14 24S18 30 18 13z"></path><path class="icon-white" d="M23 18h18v7H23z"></path>
+<path class="icon-stroke" d="M18 13h28c0 17-5 24-14 24S18 30 18 13zM32 37v13M23 52h18M22 19h20"></path>
+</svg>
+</span>
+<h2>Intencje</h2><p>Zamów intencję mszalną</p><span class="round-arrow">→</span>
+</a>
+</section>
+<section class="section" id="aktualnosci">
+<div class="section-header">
+<h2>Najnowsze aktualności</h2>
+<a class="section-more" href="aktualnosci.html">Zobacz wszystkie →</a>
+</div>
+<div class="news-list" id="newsList"><p>Wczytywanie aktualności…</p></div>
+</section>
+<section class="section" id="parafia">
+<div class="info-grid">
+<a class="info-card" href="historia-parafii.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-church"></use></svg></span>
+<span><h3>Historia Parafii</h3><p>Poznaj historię naszej parafii i kościoła.</p><b>Dowiedz się więcej →</b></span>
+</a>
+<a class="info-card" href="duszpasterze.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-clergy"></use></svg></span>
+<span><h3>Duszpasterze</h3><p>Poznaj księży posługujących w parafii.</p><b>Zobacz więcej →</b></span>
+</a>
+<a class="info-card" href="#sakramenty">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-window"></use></svg></span>
+<span><h3>Sakramenty</h3><p>Informacje o sakramentach i przygotowaniu.</p><b>Zobacz więcej →</b></span>
+</a>
+</div>
+</section>
+<section class="section" id="sakramenty">
+<div class="section-header"><h2>Sakramenty</h2></div>
+<div class="sacrament-grid">
+<a class="sacrament-card" href="chrzest.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-baptism"></use></svg></span>
+<span><h3>Chrzest</h3><p>Przyjęcie do wspólnoty Kościoła.</p><b>Dowiedz się więcej →</b></span>
+</a>
+<a class="sacrament-card" href="komunia.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-eucharist"></use></svg></span>
+<span><h3>Komunia Święta</h3><p>Pierwsze spotkanie z Jezusem.</p><b>Zobacz więcej →</b></span>
+</a>
+<a class="sacrament-card" href="bierzmowanie.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-dove"></use></svg></span>
+<span><h3>Bierzmowanie</h3><p>Umocnienie Duchem Świętym.</p><b>Zobacz więcej →</b></span>
+</a>
+<a class="sacrament-card" href="malzenstwo.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-marriage"></use></svg></span>
+<span><h3>Małżeństwo</h3><p>Sakrament miłości na całe życie.</p><b>Zobacz więcej →</b></span>
+</a>
+<a class="sacrament-card wide" href="namaszczenie-chorych.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-oil"></use></svg></span>
+<span><h3>Namaszczenie chorych</h3><p>Udzielenie Bożej łaski w chorobie i cierpieniu.</p><b>Dowiedz się więcej →</b></span>
+</a>
+<a class="sacrament-card wide" href="pogrzeb.html">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-coffin"></use></svg></span>
+<span><h3>Pogrzeb</h3><p>Modlitwa i nadzieja na życie wieczne.</p><b>Dowiedz się więcej →</b></span>
+</a>
+</div>
+</section>
+<section class="section" id="galeria">
+<div class="section-header">
+<h2>Galeria zdjęć</h2>
+</div>
+<div class="gallery-grid">
+<figure><img alt="Kościół parafialny" src="kosciol-jastrzab.webp"/></figure>
+<figure><img alt="Wnętrze kościoła" src="kosciol-jastrzab.webp" style="object-position:30% center"/></figure>
+<figure><img alt="Kościół od strony dzwonnicy" src="kosciol-jastrzab.webp" style="object-position:left center"/></figure>
+<figure><img alt="Wieża kościoła" src="kosciol-jastrzab.webp" style="object-position:70% center"/></figure>
+<figure><img alt="Wejście do kościoła" src="kosciol-jastrzab.webp" style="object-position:right center"/></figure>
+</div>
+<a class="gallery-button" href="#">Zobacz więcej zdjęć →</a>
+</section>
+<section class="section" id="ogloszenia">
+<div class="section-header"><h2>Ogłoszenia parafialne</h2></div>
+<div class="side-card"><div class="side-body editable" data-md="content/ogloszenia.md">Wczytywanie ogłoszeń…</div></div>
+</section>
+<section class="section" id="intencje">
+<div class="section-header"><h2>Intencje mszalne</h2></div>
+<div style="overflow:auto;border:1px solid var(--line);border-radius:10px">
+<table style="width:100%;border-collapse:collapse;min-width:720px;background:#fff">
+<thead><tr style="background:var(--green-100);color:var(--green-900)">
+<th style="padding:10px;text-align:left">Data</th><th style="padding:10px;text-align:left">Dzień</th>
+<th style="padding:10px;text-align:left">Godzina</th><th style="padding:10px;text-align:left">Zamawiający</th>
+<th style="padding:10px;text-align:left">Intencja</th>
+</tr></thead>
+<tbody id="intentionsBody"><tr><td colspan="5" style="padding:14px">Wczytywanie intencji…</td></tr></tbody>
+</table>
+</div>
+</section>
+</div>
+<aside class="sidebar">
+<section class="side-card">
+<div class="side-head">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-clock"></use></svg></span>
+<h2>MSZE ŚWIĘTE<br/>I NABOŻEŃSTWA</h2>
+</div>
+<div class="side-body">
+<h3>Niedziele i uroczystości</h3><ul><li>8:00</li><li>10:00</li><li>12:00</li><li>16:00</li></ul>
+<h3>Święta zniesione</h3><ul><li>8:00</li><li>10:00</li><li>17:00</li></ul>
+<h3>Dni powszednie</h3><ul><li>7:00</li><li>7:30</li><li>17:00 <small>(od marca do grudnia)</small></li></ul>
+<a class="side-action" href="#msze">Zobacz plan nabożeństw →</a>
+</div>
+</section>
+<section class="side-card">
+<div class="side-head">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-bible"></use></svg></span>
+<h2>EWANGELIA Z DNIA</h2>
+</div>
+<div class="side-body">
+<div class="side-date"><strong id="todayDate">Dzisiejsza data</strong><span id="todayWeekday"></span></div>
+<p>„Czytaj Ewangelię dnia i rozważ Słowo Boże”</p>
+<a class="side-action" href="https://opoka.org.pl/liturgia" id="todayGospelLink" rel="noopener" target="_blank">Czytaj →</a>
+</div>
+</section>
+<section class="side-card">
+<div class="side-head">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-calendar"></use></svg></span>
+<h2>LITURGIA DNIA</h2>
+</div>
+<div class="side-body">
+<div class="side-date"><strong id="liturgyDate">Dzisiejsza data</strong></div>
+<p>Pełne czytania mszalne i wspomnienie liturgiczne.</p>
+<a class="side-action" href="https://opoka.org.pl/liturgia" id="liturgyLink" rel="noopener" target="_blank">Zobacz czytania →</a>
+</div>
+</section>
+<section class="side-card">
+<div class="side-head">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-globe"></use></svg></span>
+<h2>VATICAN NEWS</h2>
+</div>
+<div class="side-body">
+<p>Najważniejsze informacje z Kościoła katolickiego na świecie.</p>
+<a class="side-action" href="https://www.vaticannews.va/pl.html" rel="noopener" target="_blank">Przejdź do Vatican News →</a>
+</div>
+</section>
+<section class="side-card" id="kontakt">
+<div class="side-head">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-phone"></use></svg></span>
+<h2>KONTAKT</h2>
+</div>
+<div class="side-body">
+<strong>Parafia pw. św. Jana Chrzciciela w Jastrzębiu</strong>
+<p class="contact-line">ul. Jana Pawła II 8<br/>26-502 Jastrząb<br/>woj. mazowieckie</p>
+<p class="contact-line"><b>T:</b> <a href="tel:+48486284006">+48 48 628 40 06</a><br/><b>E:</b> <a href="mailto:parafiajastrzab@vp.pl">parafiajastrzab@vp.pl</a></p>
+</div>
+</section>
+<section class="side-card" id="lokalizacja">
+<div class="side-head">
+<span class="icon"><svg aria-hidden="true" viewBox="0 0 64 64"><use href="#i-location-church"></use></svg></span>
+<h2>LOKALIZACJA</h2>
+</div>
+<div class="side-body location-body">
+<iframe loading="lazy" src="https://www.google.com/maps?q=Parafia%20%C5%9Bw.%20Jana%20Chrzciciela%20w%20Jastrz%C4%99biu%2C%20ul.%20Jana%20Paw%C5%82a%20II%208&amp;output=embed" title="Mapa parafii"></iframe>
+<p>Jak dojechać do naszej parafii?</p>
+<a class="side-action" href="https://maps.app.goo.gl/ZnNGBZPzrGBD1JJr7" rel="noopener" target="_blank">Sprawdź trasę →</a>
+</div>
+</section>
+</aside>
 </main>
-
 <footer>
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <span class="brand-cross"></span>
-      <span class="brand-name"><strong>PARAFIA</strong><span>św. Jana Chrzciciela</span><span>w Jastrzębiu</span></span>
-    </div>
-    <nav class="footer-nav">
-      <a href="#aktualnosci">Aktualności</a><a href="#ogloszenia">Ogłoszenia</a><a href="#intencje">Intencje</a>
-      <a href="historia-parafii.html">Historia</a><a href="duszpasterze.html">Duszpasterze</a><a href="#sakramenty">Sakramenty</a><a href="#kontakt">Kontakt</a>
-    </nav>
-    <span class="footer-copy">© 2026 Parafia św. Jana Chrzciciela w Jastrzębiu</span>
-    <a class="facebook" href="#" aria-label="Facebook">f</a>
-  </div>
+<div class="wrap footer-inner">
+<div class="footer-brand">
+<span class="brand-cross"></span>
+<span class="brand-name"><strong>PARAFIA</strong><span>św. Jana Chrzciciela</span><span>w Jastrzębiu</span></span>
+</div>
+<nav class="footer-nav">
+<a href="#aktualnosci">Aktualności</a><a href="#ogloszenia">Ogłoszenia</a><a href="#intencje">Intencje</a>
+<a href="historia-parafii.html">Historia</a><a href="duszpasterze.html">Duszpasterze</a><a href="#sakramenty">Sakramenty</a><a href="#kontakt">Kontakt</a>
+</nav>
+<span class="footer-copy">© 2026 Parafia św. Jana Chrzciciela w Jastrzębiu</span>
+<a aria-label="Facebook" class="facebook" href="#">f</a>
+</div>
 </footer>
-
 <script>
 const menuToggle=document.getElementById('menuToggle');
 const mainNav=document.getElementById('mainNav');

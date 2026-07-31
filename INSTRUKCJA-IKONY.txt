@@ -1,0 +1,5 @@
+POPRAWIONE IKONY
+
+Ikony są teraz wektorowe SVG, ostre na każdym ekranie i utrzymane w jednym stylu: gruba, zaokrąglona linia, jasne wypełnienia oraz jednolita paleta zieleni, złota, błękitu, czerwieni i fioletu.
+
+Wgraj całą zawartość paczki do głównego katalogu repozytorium GitHub.
